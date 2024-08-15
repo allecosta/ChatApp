@@ -1,6 +1,4 @@
-package app;
-
-import client.ChatClient;
+package client;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,7 +32,7 @@ public class ChatClientGUI extends JFrame {
 
         JScrollPane scrollPane = new JScrollPane(messageArea);
         add(scrollPane, BorderLayout.CENTER);
-        String name = JOptionPane.showInputDialog(this, "Digite o seu nome:", "Nome", JOptionPane.PLAIN_MESSAGE);
+        String name = JOptionPane.showInputDialog(this, "Digite o seu nome:", "ChatApp", JOptionPane.PLAIN_MESSAGE);
 
         this.setTitle("ChatApp - " + name);
 
